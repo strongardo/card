@@ -465,7 +465,7 @@ footer {
   .ai-card { grid-column: span 1; }
   .benefits-grid { grid-template-columns: 1fr; }
   .contact-inner { grid-template-columns: 1fr; gap: 40px; }
-  .contact-visual { display: none; }
+  .contact-visual { justify-content: flex-start; }
   .footer-inner { grid-template-columns: 1fr 1fr; gap: 36px; }
   .footer-brand { grid-column: span 2; }
 }
