@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description"
+          content="Николай Леонов: Python / Django Web Developer. Разработка и поддержка веб-проектов на Python, Django и Django REST Framework."/>
+    <meta name="keywords"
+          content="Python, Django, Django REST Framework, веб-разработчик, backend, REST API, PostgreSQL"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://leonovdev.ru/"/>
+    <meta property="og:title" content="Николай Леонов: Python / Django Web Developer"/>
+    <meta property="og:description" content="Python / Django Web Developer с опытом разработки и поддержки веб-проектов."/>
+    <meta property="og:image" content="https://leonovdev.ru/assets/images/og-image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="Николай Леонов: Python / Django Web Developer"/>
+    <meta name="twitter:description" content="Python / Django Web Developer с опытом разработки и поддержки веб-проектов."/>
+    <meta name="twitter:image" content="https://leonovdev.ru/assets/images/og-image.png"/>
+    <link rel="canonical" href="https://leonovdev.ru/"/>
+    <title>Николай Леонов: Python / Django Web Developer</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/css/styles.css"/>
+</head>
+<body>
+
+<!-- ── Navigation ── -->
+<nav class="nav">
+    <div class="container nav-inner">
+        <a href="/" class="nav-logo">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg"
+                 aria-label="НЛ: Николай Леонов">
+                <rect width="44" height="44" rx="13" fill="url(#navG)"/>
+                <rect x="1" y="1" width="42" height="23" rx="12" fill="rgba(255,255,255,.1)"/>
+                <!-- Н -->
+                <path d="M6 11 L6 33 M6 22 L18 22 M18 11 L18 33"
+                      stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <!-- Л -->
+                <path d="M24 33 L26 33 L38 11 L38 33"
+                      stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <defs>
+                    <linearGradient id="navG" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                        <stop offset="0%" stop-color="#2563eb"/>
+                        <stop offset="100%" stop-color="#4f46e5"/>
+                    </linearGradient>
+                </defs>
+            </svg>
+        </a>
+        <ul class="nav-links">
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#experience">Опыт</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#skills">Навыки</a></li>
+            <li><a href="#projects">Проекты</a></li>
+            <li><a href="#contact">Контакты</a></li>
+        </ul>
+        <div class="nav-cta">
+            <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:.875rem;">Написать</a>
+        </div>
+        <div class="hamburger" id="hamburger" aria-label="Меню" role="button" tabindex="0">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#about" class="mobile-link">Обо мне</a>
+    <a href="#experience" class="mobile-link">Опыт</a>
+    <a href="#services" class="mobile-link">Услуги</a>
+    <a href="#skills" class="mobile-link">Навыки</a>
+    <a href="#projects" class="mobile-link">Проекты</a>
+    <a href="#contact" class="mobile-link">Контакты</a>
+</div>
+
+<!-- ── Hero ── -->
+<section id="hero">
+    <div class="container">
+        <div class="hero-inner">
+            <div class="hero-content">
+                <div class="hero-badge reveal">
+                    <span class="hero-badge-dot"></span>
+                    Открыт к новым проектам
+                </div>
+                <h1 class="hero-title reveal reveal-delay-1">
+                    Николай<br><span class="accent">Леонов</span>
+                </h1>
+                <div class="hero-role reveal reveal-delay-2">Веб-разработчик</div>
+                <div class="hero-stack reveal reveal-delay-2">Python • Django • Django REST Framework • PostgreSQL •
+                    Docker
+                </div>
+                <p class="hero-sub reveal reveal-delay-3">Python / Django Web Developer с опытом разработки и поддержки веб-проектов. 
+                    Развиваю и поддерживаю крупный мультиязычный информационный портал, 
+                    а также создаю собственные веб-приложения на Django, уделяя особое внимание качеству кода, 
+                    производительности и удобству пользователей</p>
+                <div class="hero-btns reveal reveal-delay-4">
+                    <a href="#projects" class="btn btn-primary">
+                        <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                             stroke-width="2">
+                            <path d="M9 5l7 7-7 7"/>
+                        </svg>
+                        Мои проекты
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Связаться со мной</a>
+                </div>
+            </div>
+
+            <div class="hero-visual reveal reveal-delay-2">
+                <div class="hero-code">
+                    <div class="code-win-header">
+                        <span class="code-dot code-dot-red"></span>
+                        <span class="code-dot code-dot-yellow"></span>
+                        <span class="code-dot code-dot-green"></span>
+                        <span class="code-filename">api/views.py</span>
+                    </div>
+<pre class="code-body"><span class="syn-kw">from</span> django.shortcuts <span class="syn-kw">import</span> get_object_or_404
+<span class="syn-kw">from</span> rest_framework <span class="syn-kw">import</span> generics
+<span class="syn-kw">from</span> .models <span class="syn-kw">import</span> Article, Comment
+<span class="syn-kw">from</span> .serializers <span class="syn-kw">import</span> CommentSerializer
+
+
+<span class="syn-kw">class</span> <span class="syn-cl">CommentAPIView</span>(generics.ListCreateAPIView):
+    serializer_class = CommentSerializer
+
+    <span class="syn-kw">def</span> <span class="syn-fn">get_queryset</span>(<span class="syn-self">self</span>):
+        <span class="syn-kw">return</span> Comment.objects.filter(
+            article__slug=<span class="syn-self">self</span>.kwargs[<span class="syn-str">'slug'</span>]
+        ).order_by(<span class="syn-str">'-created_at'</span>)
+
+    <span class="syn-kw">def</span> <span class="syn-fn">perform_create</span>(<span class="syn-self">self</span>, serializer):
+        article = get_object_or_404(
+            Article,
+            slug=<span class="syn-self">self</span>.kwargs[<span class="syn-str">'slug'</span>]
+        )
+
+        serializer.save(article=article)</pre>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── About ── -->
+<section id="about">
+    <div class="container">
+        <div class="about-inner">
+            <div class="reveal">
+                <div class="section-label">Обо мне</div>
+                <h2>Коротко о главном</h2>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="feat-title">Коммерческий опыт</div>
+                        <div class="feat-desc">С 2019 года участвую в разработке веб-проектов</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="feat-title">Реальные проекты</div>
+                        <div class="feat-desc">Национальный информационный портал и собственные проекты</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="feat-title">Технологии</div>
+                        <div class="feat-desc">Python, Django, Django REST Framework, JS, Docker, Nginx, Linux, Git</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="feat-title">Обучение и коммуникация</div>
+                        <div class="feat-desc">Опыт преподавания программирования с 2021 года</div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-text reveal reveal-delay-2">
+                <p>Django-разработчик с коммерческим опытом с 2019 года. Основной стек — Python, Django, DRF, PostgreSQL. Умею проектировать модели данных, строить REST API и разворачивать проекты на Linux-сервере с Docker и Nginx.</p>
+                <p>Параллельно занимаюсь фронтендом: HTML, CSS, JavaScript — достаточно, чтобы сверстать интерфейс без привлечения отдельного специалиста на небольших задачах.</p>
+                <p>Использую AI-инструменты (Claude, Copilot, Cursor) в повседневной работе — для ускорения рутины, анализа кода и прототипирования.</p>
+                <div class="about-highlight">
+                    <strong>Преподавание программирования.</strong> Помимо веб-разработки, имею опыт обучения
+                    программированию детей и подростков. Это развило умение объяснять сложные технические концепции
+                    доступным языком и выстраивать эффективную коммуникацию в команде
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── Experience ── -->
+<section id="experience">
+    <div class="container">
+        <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto;">
+            <div class="section-label">Опыт работы</div>
+            <h2>Профессиональный путь</h2>
+        </div>
+        <div class="experience-list">
+            <div class="exp-card reveal reveal-delay-1">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-company">КНИА «Кабар»</div>
+                        <span class="exp-position">Инженер-программист</span>
+                    </div>
+                    <div class="exp-date">2019 – настоящее время</div>
+                </div>
+                <p class="exp-desc">Участвую в разработке и поддержке мультиязычного информационного портала
+                    национального информационного агентства «Кабар». Работаю с Django, Wagtail CMS, фронтенд-частью, базами
+                    данных и серверами. Занимаюсь развитием функциональности проекта, поддержкой
+                    стабильной работы системы и внедрением новых возможностей</p>
+            </div>
+            <div class="exp-card reveal reveal-delay-2">
+                <div class="exp-header">
+                    <div>
+                        <div class="exp-company">Skysmart</div>
+                        <span class="exp-position">Преподаватель программирования</span>
+                    </div>
+                    <div class="exp-date">2021 – настоящее время</div>
+                </div>
+                <p class="exp-desc">Провожу занятия по веб-разработке и программированию для школьников. Обучаю HTML,
+                    CSS, JavaScript, Python и Scratch. Помогаю ученикам создавать собственные проекты и развивать
+                    практические навыки разработки</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── Services ── -->
+<section id="services">
+    <div class="container">
+        <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto;">
+            <div class="section-label">Чем я занимаюсь</div>
+            <h2>Backend, фронтенд и деплой</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card reveal reveal-delay-1">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="8" rx="2"/>
+                        <rect x="2" y="14" width="20" height="8" rx="2"/>
+                        <circle cx="6" cy="6" r="1" fill="currentColor" stroke="none"/>
+                        <circle cx="6" cy="18" r="1" fill="currentColor" stroke="none"/>
+                        <line x1="10" y1="6" x2="16" y2="6"/>
+                        <line x1="10" y1="18" x2="16" y2="18"/>
+                    </svg>
+                </div>
+                <h3>Backend-разработка</h3>
+                <p>Разработка серверной логики, REST API, бизнес-процессов и интеграций. Проектирование баз данных и
+                    оптимизация производительности</p>
+            </div>
+            <div class="service-card reveal reveal-delay-2">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"/>
+                        <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                </div>
+                <h3>Frontend-разработка</h3>
+                <p>Создание удобных и адаптивных пользовательских интерфейсов. Вёрстка по макетам, интерактивность на
+                    JavaScript</p>
+            </div>
+            <div class="service-card reveal reveal-delay-3">
+                <div class="service-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/>
+                        <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/>
+                        <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/>
+                        <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/>
+                    </svg>
+                </div>
+                <h3>Деплой</h3>
+                <p>Настройка и запуск проектов на Linux-серверах: Docker, Nginx, systemd. Конфигурация окружения,
+                    SSL, проксирование и стабильная работа в продакшене</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── Skills ── -->
+<section id="skills">
+    <div class="container">
+        <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto;">
+            <div class="section-label">Технологии</div>
+            <h2>Мой технологический стек</h2>
+        </div>
+        <div class="tech-stack reveal reveal-delay-1">
+
+            <div class="tech-item">
+                <img src="assets/images/python.svg" alt="Python" width="52" height="52" loading="lazy">
+                <span>Python</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="assets/images/django.svg" alt="Django" width="52" height="52" loading="lazy" class="tech-logo-pad">
+                <span>Django</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="assets/images/djangorest.svg" alt="Django REST Framework" width="52" height="52" loading="lazy">
+                <span>DRF</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="assets/images/postgresql.svg" alt="PostgreSQL" width="52" height="52" loading="lazy">
+                <span>PostgreSQL</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="assets/images/mysql.svg" alt="MySQL" width="52" height="52" loading="lazy">
+                <span>MySQL</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="assets/images/docker.svg" alt="Docker" width="52" height="52" loading="lazy">
+                <span>Docker</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="assets/images/html5.svg" alt="HTML5" width="52" height="52" loading="lazy">
+                <span>HTML5</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="assets/images/css3.svg" alt="CSS3" width="52" height="52" loading="lazy">
+                <span>CSS3</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="assets/images/javascript.svg" alt="JavaScript" width="52" height="52" loading="lazy">
+                <span>JavaScript</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="assets/images/nginx.svg" alt="Nginx" width="52" height="52" loading="lazy">
+                <span>Nginx</span>
+            </div>
+
+            <div class="tech-item">
+                <img src="assets/images/linux.svg" alt="Linux" width="52" height="52" loading="lazy">
+                <span>Linux</span>
+            </div>
+            
+            <div class="tech-item">
+                <img src="assets/images/git.svg" alt="Git" width="52" height="52" loading="lazy">
+                <span>Git</span>
+            </div>
+
+        </div>
+        <div class="tech-ai-strip reveal reveal-delay-2">
+            <span class="tech-ai-label">AI-инструменты</span>
+            <span class="pill">Claude</span>
+            <span class="pill">ChatGPT</span>
+            <span class="pill">GitHub Copilot</span>
+            <span class="pill">Cursor</span>
+        </div>
+    </div>
+</section>
+
+<!-- ── Projects ── -->
+<section id="projects">
+    <div class="container">
+        <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto;">
+            <div class="section-label">Проекты</div>
+            <h2>Основные работы</h2>
+        </div>
+        <div class="projects-grid">
+
+            <!-- Project 1: Кабар -->
+            <div class="project-card reveal reveal-delay-1">
+                <div class="project-preview" style="background:#0C1F4A;">
+                    <img src="assets/illustrations/kabar.svg" alt="" width="260" height="160" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Django</span>
+                        <span class="project-tag">Wagtail CMS</span>
+                        <span class="project-tag">PostgreSQL</span>
+                    </div>
+                    <h3>Кабар</h3>
+                    <p>Крупный мультиязычный информационный портал на базе Wagtail CMS. 
+                        Предоставляет редакции удобные инструменты для управления новостным контентом, мультимедиа и рекламными материалами,
+                        а пользователям - быстрый доступ к публикациям, поиску, архивам и тематическим разделам на нескольких языках</p>
+                    <div class="project-footer">
+                        <a href="https://ru.kabar.kg/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Смотреть
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: CodeKids -->
+            <div class="project-card reveal reveal-delay-2">
+                <div class="project-preview" style="background:#052E16;">
+                    <img src="assets/illustrations/codekids.svg" alt="" width="260" height="160" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Django</span>
+                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">Docker</span>
+                    </div>
+                    <h3>CodeKids</h3>
+                    <p>Pet-проект: Веб-платформа для школы программирования, объединяющая учеников, преподавателей и 
+                        администрацию в единой системе. Реализованы личные кабинеты, управление курсами и 
+                        учебными материалами, распределение ролей пользователей и инструменты для организации образовательного процесса</p>
+                    <div class="project-footer">
+                        <a href="https://github.com/strongardo/codekids" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://codekids.leonovdev.ru/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Смотреть
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: WebCraft -->
+            <div class="project-card reveal reveal-delay-3">
+                <div class="project-preview" style="background:#1A0533;">
+                    <img src="assets/illustrations/webcraft.svg" alt="" width="260" height="160" loading="lazy">
+                </div>
+                <div class="project-body">
+                    <div class="project-tags">
+                        <span class="project-tag">Python</span>
+                        <span class="project-tag">Django</span>
+                        <span class="project-tag">DRF</span>
+                        <span class="project-tag">PostgreSQL</span>
+                        <span class="project-tag">Docker</span>
+                    </div>
+                    <h3>WebCraft</h3>
+                    <p>Pet-проект: Контентная платформа с REST API на Django REST Framework, 
+                        предназначенная для публикации статей и взаимодействия пользователей через систему комментариев. 
+                        Проект включает управление контентом, категории публикаций и контейнеризацию с использованием Docker.</p>
+                    <div class="project-footer">
+                        <a href="https://github.com/strongardo/newsblog" class="btn btn-secondary btn-sm" target="_blank" rel="noopener noreferrer">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="2">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            GitHub
+                        </a>
+                        <a href="https://webcraft.leonovdev.ru/" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                 stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                <polyline points="15 3 21 3 21 9"/>
+                                <line x1="10" y1="14" x2="21" y2="3"/>
+                            </svg>
+                            Смотреть
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ── Benefits ── -->
+<section id="benefits">
+    <div class="container">
+        <div class="reveal" style="text-align:center; max-width:600px; margin:0 auto;">
+            <div class="section-label">Преимущества</div>
+            <h2>Почему стоит работать со мной</h2>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-card reveal reveal-delay-1">
+                <div class="benefit-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="16 18 22 12 16 6"/>
+                        <polyline points="8 6 2 12 8 18"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3>Чистый и поддерживаемый код</h3>
+                    <p>Выделяю переиспользуемую логику в сервисы и миксины, избегаю дублирования в моделях и запросах. Код, который можно читать и менять без страха</p>
+                </div>
+            </div>
+            <div class="benefit-card reveal reveal-delay-2">
+                <div class="benefit-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="8" rx="2"/>
+                        <rect x="2" y="14" width="20" height="8" rx="2"/>
+                        <circle cx="6" cy="6" r="1" fill="#2563EB" stroke="none"/>
+                        <circle cx="6" cy="18" r="1" fill="#2563EB" stroke="none"/>
+                        <line x1="10" y1="6" x2="16" y2="6"/>
+                        <line x1="10" y1="18" x2="16" y2="18"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3>Надёжный backend</h3>
+                    <p>Несколько лет поддержки продакшн-сервиса научили думать о надёжности: медленные запросы, стабильность при обновлениях, поведение системы под нагрузкой</p>
+                </div>
+            </div>
+            <div class="benefit-card reveal reveal-delay-3">
+                <div class="benefit-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3>Коммуникация</h3>
+                    <p>Умею объяснять технические решения понятным языком. Преподавательский опыт научил выстраивать
+                        чёткую коммуникацию с командой и заказчиком</p>
+                </div>
+            </div>
+            <div class="benefit-card reveal reveal-delay-4">
+                <div class="benefit-icon">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="2"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M12 8v4l3 3"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3>Современный подход к разработке</h3>
+                    <p>Использую современные AI-инструменты для повышения продуктивности: быстрое прототипирование,
+                        анализ кода и поиск оптимальных решений</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── Contact ── -->
+<section id="contact">
+    <div class="container">
+        <div class="contact-inner">
+            <div>
+                <div class="section-label reveal">Контакты</div>
+                <h2 class="reveal reveal-delay-1">Готов к новым проектам</h2>
+                <p class="sub reveal reveal-delay-2">Открыт к предложениям о работе, фрилансу и интересным проектам.
+                    Напишите, отвечу быстро</p>
+                <div class="contact-links">
+                    <a href="https://github.com/strongardo" target="_blank" rel="noopener"
+                       class="contact-card reveal reveal-delay-1">
+                        <div class="contact-card-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb"
+                                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                        </div>
+                        <div class="contact-card-info">
+                            <div class="platform">GitHub</div>
+                            <div class="handle">@strongardo</div>
+                        </div>
+                    </a>
+                    <a href="https://linkedin.com/" target="_blank" rel="noopener"
+                       class="contact-card reveal reveal-delay-2">
+                        <div class="contact-card-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb"
+                                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                                <rect x="2" y="9" width="4" height="12"/>
+                                <circle cx="4" cy="4" r="2"/>
+                            </svg>
+                        </div>
+                        <div class="contact-card-info">
+                            <div class="platform">LinkedIn</div>
+                            <div class="handle">Nikolai Leonov</div>
+                        </div>
+                    </a>
+                    <a href="https://t.me/strongardo" target="_blank" rel="noopener" class="contact-card reveal reveal-delay-3">
+                        <div class="contact-card-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb"
+                                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </div>
+                        <div class="contact-card-info">
+                            <div class="platform">Telegram</div>
+                            <div class="handle">@strongardo</div>
+                        </div>
+                    </a>
+                    <a href="mailto:strongardo@gmail.com" class="contact-card reveal reveal-delay-4">
+                        <div class="contact-card-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#2563eb"
+                                 stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-card-info">
+                            <div class="platform">Email</div>
+                            <div class="handle">strongardo@gmail.com</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-visual reveal reveal-delay-2">
+                <div class="contact-status-card">
+                    <div class="csc-header">
+                        <span class="csc-dot"></span>
+                        <span class="csc-status-text">Открыт к новым проектам</span>
+                    </div>
+                    <div class="csc-rows">
+                        <div class="csc-row">
+                            <span class="csc-label">Локация</span>
+                            <span class="csc-value">Бишкек, Кыргызстан</span>
+                        </div>
+                        <div class="csc-row">
+                            <span class="csc-label">Часовой пояс</span>
+                            <span class="csc-value">UTC+6</span>
+                        </div>
+                        <div class="csc-row">
+                            <span class="csc-label">Ответ на запрос</span>
+                            <span class="csc-value">в течение дня</span>
+                        </div>
+                        <div class="csc-row">
+                            <span class="csc-label">Формат работы</span>
+                            <span class="csc-value">Удалённо</span>
+                        </div>
+                        <div class="csc-row">
+                            <span class="csc-label">Гражданство</span>
+                            <span class="csc-value">Кыргызстан · ЕАЭС</span>
+                        </div>
+                    </div>
+                    <div class="csc-footer">
+                        <p>Рассматриваю удалённую работу, в том числе в российских компаниях.</p>
+                        <p class="csc-footer-note">Есть ИНН РФ, СНИЛС и банковские реквизиты РФ - готов к официальному оформлению</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ── Footer ── -->
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <!-- Brand -->
+            <div class="footer-brand">
+                <div class="footer-brand-top">
+                    <a href="/" style="display:block;flex-shrink:0;">
+                        <svg width="40" height="40" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="44" height="44" rx="13" fill="url(#footerG)"/>
+                            <rect x="1" y="1" width="42" height="23" rx="12" fill="rgba(255,255,255,.1)"/>
+                            <path d="M6 11 L6 33 M6 22 L18 22 M18 11 L18 33" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <path d="M24 33 L26 33 L38 11 L38 33" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                            <defs>
+                                <linearGradient id="footerG" x1="0" y1="0" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#2563eb"/>
+                                    <stop offset="100%" stop-color="#4f46e5"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                    <div>
+                        <div class="footer-brand-name">Николай Леонов</div>
+                        <div class="footer-brand-title-text">Python / Django Web Developer</div>
+                    </div>
+                </div>
+                <div class="footer-available">
+                    <span class="footer-available-dot"></span>
+                    <span>Открыт к новым проектам</span>
+                </div>
+            </div>
+
+            <!-- Navigation -->
+            <div>
+                <div class="footer-col-title">Навигация</div>
+                <ul class="footer-nav-list">
+                    <li><a href="#about">Обо мне</a></li>
+                    <li><a href="#experience">Опыт</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#skills">Навыки</a></li>
+                    <li><a href="#projects">Проекты</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+            </div>
+
+            <!-- Contacts -->
+            <div>
+                <div class="footer-col-title">Связаться</div>
+                <ul class="footer-contact-list">
+                    <li>
+                        <a href="https://github.com/strongardo" target="_blank" rel="noopener">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+                            </svg>
+                            GitHub · @strongardo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://t.me/strongardo" target="_blank" rel="noopener">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                            Telegram · @strongardo
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:strongardo@gmail.com">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            strongardo@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+            <span>© 2026 Николай Леонов</span>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/js/script.js" defer></script>
+</body>
+</html>
