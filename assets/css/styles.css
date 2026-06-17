@@ -483,6 +483,7 @@ footer {
   .contact-links { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
   .footer-brand { grid-column: span 1; }
+  .footer-nav-list { display: grid; grid-template-columns: 1fr 1fr; grid-auto-flow: column; grid-template-rows: repeat(3, auto); }
   .footer-bottom-inner { flex-direction: column; gap: 10px; text-align: center; }
 }
 @media (max-width: 480px) {
