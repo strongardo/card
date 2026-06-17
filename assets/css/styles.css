@@ -472,8 +472,14 @@ footer {
   .nav-links, .nav-cta { display: none; }
   .hamburger { display: flex; }
   section { padding: 48px 0; }
-  #hero { padding: 88px 0 52px; }
+  #hero { padding: 104px 0 52px; }
   .about-stats { grid-template-columns: 1fr 1fr; }
+  .experience-list,
+  .services-grid,
+  .tech-stack,
+  .projects-grid,
+  .benefits-grid { margin-top: 32px; }
+  .about-stats { margin-top: 24px; }
   .contact-links { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; }
   .footer-brand { grid-column: span 1; }
@@ -481,7 +487,7 @@ footer {
 }
 @media (max-width: 480px) {
   section { padding: 36px 0; }
-  #hero { padding: 72px 0 44px; }
+  #hero { padding: 88px 0 44px; }
   .hero-btns { flex-direction: column; align-items: flex-start; }
   .about-stats { grid-template-columns: 1fr; }
   .project-footer { flex-direction: column; }
