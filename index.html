@@ -27,7 +27,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="assets/css/styles.css?v=1.0.1"/>
+    <link rel="stylesheet" href="assets/css/styles.css?v=1.0.6"/>
 </head>
 <body>
 
@@ -90,7 +90,7 @@
                     Открыт к новым проектам
                 </div>
                 <h1 class="hero-title reveal reveal-delay-1">
-                    Николай<br><span class="accent">Леонов</span>
+                    Николай <span class="accent">Леонов</span>
                 </h1>
                 <div class="hero-role reveal reveal-delay-2">Веб-разработчик</div>
                 <div class="hero-stack reveal reveal-delay-2">Python • Django • Django REST Framework • PostgreSQL •
@@ -111,37 +111,8 @@
                     <a href="#contact" class="btn btn-secondary">Связаться со мной</a>
                 </div>
             </div>
-
-            <div class="hero-visual reveal reveal-delay-2">
-                <div class="hero-code">
-                    <div class="code-win-header">
-                        <span class="code-dot code-dot-red"></span>
-                        <span class="code-dot code-dot-yellow"></span>
-                        <span class="code-dot code-dot-green"></span>
-                        <span class="code-filename">api/views.py</span>
-                    </div>
-<pre class="code-body"><span class="syn-kw">from</span> django.shortcuts <span class="syn-kw">import</span> get_object_or_404
-<span class="syn-kw">from</span> rest_framework <span class="syn-kw">import</span> generics
-<span class="syn-kw">from</span> .models <span class="syn-kw">import</span> Article, Comment
-<span class="syn-kw">from</span> .serializers <span class="syn-kw">import</span> CommentSerializer
-
-
-<span class="syn-kw">class</span> <span class="syn-cl">CommentAPIView</span>(generics.ListCreateAPIView):
-    serializer_class = CommentSerializer
-
-    <span class="syn-kw">def</span> <span class="syn-fn">get_queryset</span>(<span class="syn-self">self</span>):
-        <span class="syn-kw">return</span> Comment.objects.filter(
-            article__slug=<span class="syn-self">self</span>.kwargs[<span class="syn-str">'slug'</span>]
-        ).order_by(<span class="syn-str">'-created_at'</span>)
-
-    <span class="syn-kw">def</span> <span class="syn-fn">perform_create</span>(<span class="syn-self">self</span>, serializer):
-        article = get_object_or_404(
-            Article,
-            slug=<span class="syn-self">self</span>.kwargs[<span class="syn-str">'slug'</span>]
-        )
-
-        serializer.save(article=article)</pre>
-                </div>
+            <div class="hero-photo reveal reveal-delay-2">
+                <img src="assets/images/photo.jpg" alt="Николай Леонов" width="400" height="480">
             </div>
         </div>
     </div>
@@ -203,10 +174,9 @@
                     </div>
                     <div class="exp-date">2019 – настоящее время</div>
                 </div>
-                <p class="exp-desc">Участвую в разработке и поддержке мультиязычного информационного портала
+                <p class="exp-desc">Разрабатываю и поддерживаю мультиязычный портал
                     национального информационного агентства «Кабар». Работаю с Django, Wagtail CMS, фронтенд-частью, базами
-                    данных и серверами. Занимаюсь развитием функциональности проекта, поддержкой
-                    стабильной работы системы и внедрением новых возможностей</p>
+                    данных и серверами</p>
             </div>
             <div class="exp-card reveal reveal-delay-2">
                 <div class="exp-header">
